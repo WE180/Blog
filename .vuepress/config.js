@@ -103,7 +103,7 @@ module.exports = {
         "lastUpdated": "2020-05-05",
         "author": "we",
         "authorAvatar": "/logo.jpeg",
-        "record": "ICP 备案文案",
+        "record": "",
         "startYear": "2021",
         "subSidebar": "auto"
     },
