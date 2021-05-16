@@ -1,6 +1,8 @@
 node_modules/
 yarn.lock
 yarn.error
+package-lock.json
+yarn.lock
 # vuepress temp file
 .temp
 
