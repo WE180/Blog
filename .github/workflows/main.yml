@@ -14,5 +14,6 @@ jobs:
       - name: Install dependencies
         run: npm install      
       - name: test
-      - run:  pwd
+      - run: pwd
+      - run: ls -l
 
