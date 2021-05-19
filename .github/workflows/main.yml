@@ -13,7 +13,7 @@ jobs:
           node-version: 14.x
       - name: Install dependencies
         run: npm install      
-      - name: test
-        run: pwd
+      - name: Build
+        run: npm run build
 
 
