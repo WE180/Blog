@@ -32,16 +32,6 @@ module.exports = {
                 "icon": "reco-date"
             },
             {
-                "text": "Docs",
-                "icon": "reco-message",
-                "items": [
-                    {
-                        "text": "vuepress-reco",
-                        "link": "/docs/theme-reco/"
-                    }
-                ]
-            },
-            {
                 "text": "Contact",
                 "icon": "reco-message",
                 "items": [
@@ -94,7 +84,7 @@ module.exports = {
         "logo": "/logo.png",
         "search": true,
         "searchMaxSuggestions": 10,
-        "lastUpdated": "2020-05-05",
+        "lastUpdated": "2020-05-20",
         "author": "we",
         "authorAvatar": "/logo.jpeg",
         "record": "",
