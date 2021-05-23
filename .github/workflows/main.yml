@@ -16,6 +16,6 @@ jobs:
       - name: Build
         run: npm run build
       - name: End
-        run: rm -rf /var/www/blog/* && mv public/* /var/www/blog/
+        run: rm -rf /var/www/we/blog/* && mv public/* /var/www/we/blog/
 
 
