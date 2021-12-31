@@ -32,15 +32,9 @@ module.exports = {
                 "icon": "reco-date"
             },
             {
-                "text": "Contact",
-                "icon": "reco-message",
-                "items": [
-                    {
-                        "text": "GitHub",
-                        "link": "https://github.com/recoluan",
-                        "icon": "reco-github"
-                    }
-                ]
+                "text": "GitHub",
+                "icon": "reco-github",
+                "link": "https://github.com/WE180"
             }
         ],
         "sidebar": {
