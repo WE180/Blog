@@ -14,12 +14,12 @@ categories: Windows
 
 3. 找到对应的版本，这里最新的是 `8.4.0`
 
-   <img src="https://blog.sudk.top/1621081336552.png" style="zoom:50%;" />
+   <img src="https://images.sudk.top/1621081336552.png" style="zoom:50%;" />
 
 4. 进入 `resources` 目录，将刚刚的汉化版解压放入
 
-![](https://blog.sudk.top/1621081433919.png)
+![](https://images.sudk.top/1621081433919.png)
 
 5. 效果
 
-![](https://blog.sudk.top/1621081537140.png)
+![](https://images.sudk.top/1621081537140.png)
