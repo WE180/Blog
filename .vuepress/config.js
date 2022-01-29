@@ -74,7 +74,7 @@ module.exports = {
         "searchMaxSuggestions": 10,
         "lastUpdated": "2020-05-20",
         "author": "we",
-        "authorAvatar": "https://images.sudk.top/scc-2022-1-2915%3A38%3A41.jpg",
+        "authorAvatar": "/logo.jpeg",
         "record": "",
         "startYear": "2021",
         "subSidebar": "auto"
