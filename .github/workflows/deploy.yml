@@ -17,4 +17,3 @@ jobs:
         TARGET_BRANCH: gh_pages
         BUILD_SCRIPT: npm install && npm run build
         BUILD_DIR: public/
-        CNAME: https://we180.github.io
