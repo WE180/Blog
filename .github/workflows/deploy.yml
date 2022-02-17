@@ -1,21 +1,19 @@
-name: CI/CD
+name: Build and Deploy
 on:
   push:
     branches: [ master ]  
 jobs:
-  test:
-    runs-on: we
+  build-and-deploy:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js 14.x
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14.x
-      - name: Install dependencies
-        run: npm install      
-      - name: Build
-        run: npm run build
-      - name: End
-        run: rm -rf /var/www/we/blog/* && mv public/* /var/www/we/blog/
+    - name: Checkout
+      uses: actions/checkout@master
 
-
+    - name: Build and Deploy
+      uses: jenkey2011/vuepress-deploy@master
+      env:
+        ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
+        TARGET_REPO: WE180/Blog
+        TARGET_BRANCH: gh_pages
+        BUILD_SCRIPT: npm install && npm run build
+        BUILD_DIR: public/
