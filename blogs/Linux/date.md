@@ -2,6 +2,9 @@
 title: CentOS 8 时间同步
 date: 2022-02-13
 categories: Linux
+tags:
+ - Linux
+ - CentOS
 ---
 
 ## chrony 同步时间
