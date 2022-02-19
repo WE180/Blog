@@ -1,5 +1,5 @@
 ---
-title: CentOS 8 镜像
+title: CentOS 8 源
 date: 2022-02-19
 categories: Linux
 tags:

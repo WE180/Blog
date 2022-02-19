@@ -73,7 +73,7 @@ module.exports = {
         "logo": "/logo.png",
         "search": true,
         "searchMaxSuggestions": 10,
-        "lastUpdated": "2020-05-20",
+        "lastUpdated": "2022-02-19",
         "author": "we",
         "authorAvatar": "/logo.jpeg",
         "record": "",
