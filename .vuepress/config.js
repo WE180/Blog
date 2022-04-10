@@ -35,7 +35,7 @@ module.exports = {
             {
                 "text": "GitHub",
                 "icon": "reco-github",
-                "link": "https://github.com/WE180"
+                "link": "https://github.com/sudingkun"
             }
         ],
         "sidebar": {
