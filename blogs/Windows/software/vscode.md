@@ -1,11 +1,11 @@
 ---
 title: VSCode
-date: 2022-04-9
+date: 2022-04-10
 categories: Windows
----
 tags:
-- VSCode
-- ide
+ - VSCode
+ - ide
+---
 
 >VSCode 插件
 
