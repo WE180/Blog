@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: my blog
-tagline: Enjoy when you can, and endure when you must.
+tagline: 记录一些文档和笔记
 #heroImage: /logo.png
 #heroImageStyle: {
 #   maxWidth: '200px',
