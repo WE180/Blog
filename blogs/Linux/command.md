@@ -57,6 +57,11 @@ cp -r /home/packageA /home/packageB
 
 ### 查找命令或文件
 
+which
+whereis
+locate
+find
+
 ### 压缩打包
 
 ### 上传下载
@@ -67,3 +72,23 @@ cp -r /home/packageA /home/packageB
 
 ### 防火墙
 
+### 查看进程
+
+ps
+top
+pstree
+netstat
+
+
+
+### 查看端口
+
+### 查看cpu
+
+### 查看io
+
+### 查看内存
+
+### 查看磁盘
+
+### ssh
