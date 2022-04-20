@@ -1,12 +1,12 @@
 ---
 title: Linux 常用命令
-date: 2022-04-19
+date: 2022-04-20
 categories: Linux
 tags:
   - Linux
 ---
 
-### 文件目录操作
+### 文件与目录
 
 #### mkdir
 
@@ -49,11 +49,85 @@ cp -r /home/packageA /home/packageB
 
 #### ls
 
-### 文件与目录
+扩展
 
-### 文件属性
+- 蓝色：目录
+- 绿色：可执行文件
+- 白色：一般性文件，如文本文件，配置文件等
+- 红色：压缩文件或归档文件
+- 浅蓝色：链接文件
+- 红色闪烁：链接文件存在问题
+- 黄色：设备文件
+- 青黄色：管道文件
+
+#### tree
+
+- **-L** ：制目录显示层级
+- **-f** ：在每个文件或目录之前，显示完整的相对路径名称
+- **-i** ：不以阶梯状列出文件和目录名称
+- **-I** ：忽略当前目录文件夹
+
+```shell
+# 列出目录/private/ 第一级文件名
+tree  /private/ -L 1
+# 非树状结构列出目录/private/下的所有文件
+tree -if /private/
+# 忽略当前目录文件夹 node_modules
+tree -I node_modules
+```
+
+#### ln
+
+- **-s** ：软链接
+
+```shell
+# 给 source.file 创建软链 link.file（写绝对路径）
+ln -s /tmp/source.file /tmp/ln/link.file 
+# 给 source.dir 创建软链 link.dir（目标目录在建立连接之前不能存在，但要保证它的上级目录存在）
+ln -s /tmp/source.dir/ /tmp/ln/link.dir/
+```
+
+### 权限
+
+#### chmod
+
+- **-R** ：对目录以及目录下的文件递归执行更改权限操作
+
+```shell
+chmod [ugoa] [+-=] [rwx] dirname/filename
+- u: 拥有者
+- g: 所属群组
+- o: 其他人
+- a: 所有人
+- +: 添加权限
+- -: 移除权限
+- =: 设定权限
+
+# 将文件 file.txt 设为所有人皆可读取
+chmod a+r file.txt
+# 当前用户具有所有权限，组用户有读写权限，其他用户只有读权限
+chmod u=rwx, g=rw, o=r file.txt
+# 将 file.txt 文件的权限修改为 -rwxr-xr--
+chmod 754 file.txt
+```
+
+#### chown
+
+
 
 ### 查看文件内容
+
+cat
+
+tac
+
+more
+
+less
+
+head
+
+tail 
 
 ### 查找命令或文件
 
@@ -78,8 +152,6 @@ ps
 top
 pstree
 netstat
-
-
 
 ### 查看端口
 
