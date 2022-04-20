@@ -8,3 +8,5 @@ package-lock.json
 #idea
 .idea
 /public/
+
+.history
