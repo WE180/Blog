@@ -6,6 +6,71 @@ tags:
   - Linux
 ---
 
+### 用户&用户组
+
+#### useradd 
+
+#### userdel 
+
+#### usermod 
+
+#### passwd 
+
+#### su
+
+#### groupadd
+
+#### groupdel
+
+$ useradd 选项 用户名:添加用户账号
+$ userdel 选项 用户名:删除用户帐号
+$ usermod 选项 用户名:修改帐号
+$ passwd 用户名:更改或创建用户的密码
+$ passwd -S 用户名 :显示用户账号密码信息
+$ passwd -d 用户名: 清除用户密码
+$ su - 用户名：切换登录用户
+
+```bash
+# 增加一个新的用户组
+$ groupadd 选项 用户组
+
+# 要删除一个已有的用户组
+$ groupdel 用户组
+
+# 修改用户组的属性
+$ groupmod 选项 用户组
+```
+
+
+
+### 权限
+
+#### chmod
+
+- **-R** ：对目录以及目录下的文件递归执行更改权限操作
+
+```shell
+chmod [ugoa] [+-=] [rwx] dirname/filename
+- u: 拥有者
+- g: 所属群组
+- o: 其他人
+- a: 所有人
+- +: 添加权限
+- -: 移除权限
+- =: 设定权限
+
+# 将文件 file.txt 设为所有人皆可读取
+chmod a+r file.txt
+# 当前用户具有所有权限，组用户有读写权限，其他用户只有读权限
+chmod u=rwx, g=rw, o=r file.txt
+# 将 file.txt 文件的权限修改为 -rwxr-xr--
+chmod 754 file.txt
+```
+
+#### chown
+
+
+
 ### 文件与目录
 
 #### mkdir
@@ -87,34 +152,6 @@ ln -s /tmp/source.file /tmp/ln/link.file
 ln -s /tmp/source.dir/ /tmp/ln/link.dir/
 ```
 
-### 权限
-
-#### chmod
-
-- **-R** ：对目录以及目录下的文件递归执行更改权限操作
-
-```shell
-chmod [ugoa] [+-=] [rwx] dirname/filename
-- u: 拥有者
-- g: 所属群组
-- o: 其他人
-- a: 所有人
-- +: 添加权限
-- -: 移除权限
-- =: 设定权限
-
-# 将文件 file.txt 设为所有人皆可读取
-chmod a+r file.txt
-# 当前用户具有所有权限，组用户有读写权限，其他用户只有读权限
-chmod u=rwx, g=rw, o=r file.txt
-# 将 file.txt 文件的权限修改为 -rwxr-xr--
-chmod 754 file.txt
-```
-
-#### chown
-
-
-
 ### 查看文件内容
 
 cat
@@ -129,6 +166,10 @@ head
 
 tail 
 
+cut
+
+
+
 ### 查找命令或文件
 
 which
@@ -136,9 +177,25 @@ whereis
 locate
 find
 
+fd
+
 ### 压缩打包
 
+tar
+
+zip\unzip
+
+gzip、zcat、zmore、zless 
+
+
+
 ### 上传下载
+
+rz
+
+sz
+
+scp
 
 ### 网络
 
