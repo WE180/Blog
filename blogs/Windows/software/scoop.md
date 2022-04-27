@@ -90,6 +90,8 @@ scoop install <app> 
 scoop uninstall <app>  
 # 更新软件
 scoop update <app>  
+# 删除已安装软件的旧版本
+scoop cleanup <app>
 # 禁止某程序更新
 scoop hold <app>
 # 允许某程序更新
