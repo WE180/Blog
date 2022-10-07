@@ -34,19 +34,19 @@ SELECT
 
 ### 拷贝表结构
 
-```mysql
+```sql
 create table new_table like old_table;
 ```
 
 ### 拷贝表结构和数据
 
-```mysql
+```sql
 create table new_table as select * from old_table;
 ```
 
 ### 修改表名
 
-```mysql
+```sql
 rename table old_table to new_table
 ```
 
@@ -56,7 +56,7 @@ rename table old_table to new_table
 
 ### 日期函数
 
-```mysql
+```sql
 # 获取当前日期
 SELECT curdate();
 
