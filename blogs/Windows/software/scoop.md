@@ -46,7 +46,7 @@ scoop bucket add main https://mirror.nju.edu.cn/git/scoop-main.git/
 scoop bucket add extras https://mirror.nju.edu.cn/git/scoop-extras.git/
 scoop bucket add java https://github.91chi.fun/https://github.com/ScoopInstaller/Java.git
 scoop bucket add versions https://mirror.nju.edu.cn/git/scoop-versions.git/
-scoop bucket add dorado https://gitee.com/chawyehsu/dorado
+scoop bucket add dorado https://github.91chi.fun/https://github.com/chawyehsu/dorado.git
 scoop bucket add nonportable https://codechina.csdn.net/mirrors/TheRandomLabs/scoop-nonportable
 scoop bucket add nirsoft https://github.91chi.fun/https://github.com/kodybrown/scoop-nirsoft.git
 scoop bucket add nerd-fonts https://github.91chi.fun/https://github.com/matthewjberger/scoop-nerd-fonts.git
@@ -90,8 +90,12 @@ scoop install <app> 
 scoop uninstall <app>  
 # 更新软件
 scoop update <app>  
+# 更新所有软件
+scoop update *
 # 删除已安装软件的旧版本
 scoop cleanup <app>
+# 删除所有旧版软件
+scoop cleanup *
 # 禁止某程序更新
 scoop hold <app>
 # 允许某程序更新

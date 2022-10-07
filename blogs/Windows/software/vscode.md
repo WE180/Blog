@@ -58,25 +58,13 @@ tags:
 
 - [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
 
-- [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
-
 - [local history](https://marketplace.visualstudio.com/items?itemName=xyz.local-history)
 
 - [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens)
 
-- [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-
 - [koroFileHeader](https://marketplace.visualstudio.com/items?itemName=OBKoro1.korofileheader)
 
 - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=Lokalise.i18n-ally)
-
-  
-
-  
-
-  
-
-  
 
   
 
