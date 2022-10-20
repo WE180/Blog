@@ -37,23 +37,6 @@ iwr -useb get.scoop.sh | iex
 
 GitHub访问不畅时，可能下载会不成功 。[GitHub 加速](https://github.com/521xueweihan/GitHub520)
 
-## 设置 bucket 源
-
-GitHub在国内访问速度不理想，提供国内镜像作为备选方案
-
-```powershell
-scoop bucket add main https://mirror.nju.edu.cn/git/scoop-main.git/
-scoop bucket add extras https://mirror.nju.edu.cn/git/scoop-extras.git/
-scoop bucket add java https://github.91chi.fun/https://github.com/ScoopInstaller/Java.git
-scoop bucket add versions https://mirror.nju.edu.cn/git/scoop-versions.git/
-scoop bucket add dorado https://github.91chi.fun/https://github.com/chawyehsu/dorado.git
-scoop bucket add nonportable https://codechina.csdn.net/mirrors/TheRandomLabs/scoop-nonportable
-scoop bucket add nirsoft https://github.91chi.fun/https://github.com/kodybrown/scoop-nirsoft.git
-scoop bucket add nerd-fonts https://github.91chi.fun/https://github.com/matthewjberger/scoop-nerd-fonts.git
-```
-
-配置国内镜像源后，更新 `scoop update`
-
 ## 仓库
 
 - [scoop-directory](https://rasa.github.io/scoop-directory/by-apps)
@@ -151,11 +134,35 @@ scoop install typora
 # clash
 scoop install clash-for-windows
 
-# postman
-scoop install postman
+# idea
+scoop install idea-ultimate
+
+# vscode
+scoop install vscode
+
+# datagrip
+scoop install datagrip
+
+# apifox
+scoop install apifox
 
 # grep
 scoop install grep
+
+# git
+scoop install git
+
+# powershell
+scoop install powershell
+
+# utools
+scoop install utools
+
+# nodejs
+scoop install nodejs16
+
+# sublime
+scoop install sublime-text
 ```
 
 ## 卸载
