@@ -52,6 +52,20 @@ rename table old_table to new_table
 
 
 
+### **磁盘空间大小**
+
+```sql
+select TABLE_SCHEMA,
+       TABLE_NAME,
+       concat(truncate(sum(data_length) / 1024 / 1024, 2), ' MB') as data_size,
+       concat(truncate(sum(index_length) / 1024 / 1024, 2), 'MB') as index_size
+from information_schema.tables
+group by TABLE_SCHEMA, TABLE_NAME
+ORDER BY data_size desc;
+```
+
+
+
 ## 函数
 
 ### 日期函数
