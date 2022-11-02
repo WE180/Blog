@@ -15,7 +15,9 @@ mv /etc/yum.repos.d/epel.repo /etc/yum.repos.d/epel.repo.backup
 mv /etc/yum.repos.d/epel-testing.repo /etc/yum.repos.d/epel-testing.repo.backup
 ```
 
-## 下载 repo 到 /etc/yum.repos.d/
+## 下载
+
+下载 repo 到 /etc/yum.repos.d/
 
 ### CentOS  镜像
 
@@ -62,7 +64,7 @@ wget -O /etc/yum.repos.d/epel.repo https://mirrors.aliyun.com/repo/epel-7.repo
 wget -O /etc/yum.repos.d/epel.repo https://mirrors.aliyun.com/repo/epel-archive-6.repo
 ```
 
-### 清除 yum 缓存再重新生成 yum 缓存
+### 生成缓存
 
 ```shell
 yum clean all && yum makecache
